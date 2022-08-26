@@ -69,7 +69,7 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
 <script>
     var wechat_div = document.getElementById('wechat_show');
     var wechatImg = document.getElementById("wechat_img");
-    wechat_click = document.getElementById('wechat');
+    wechat_click = document.getElementById('wechat_id');
     wechat_click.onclick = function() {
         wechat_div.style.display = "block";
         wechatImg.src = "./img/wechat.png";
@@ -88,21 +88,13 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
         <img class="box_modal_content" id="wechat_img">
     </div>
 
-    <script>
-        if (window.screen.width < 500) {
-            document.getElementById('sockial-link').style.bottom = "40%";
-        } else {
-            document.getElementById('sockial-link').style.bottom = "15%";
-        }
-    </script>
-
     <div id="sockial-link"  class="cover-social-link" style="    z-index: 999;
         position: absolute; transform: translateX(-50%); width: 200px; margin-top: -120px;
     align-self: center; display: flex; justify-content: space-evenly; flex-wrap: nowrap; left: 50%;">
         <a href="https://github.com/sisyphus1212/" class="tooltipped" target="_blank" data-tooltip="我的github" data-position="top" data-delay="50"> <i class="iconfont icon-github-fill"></i></a>
         <a href="https://space.bilibili.com/228776952" class="tooltipped" target="_blank" data-tooltip="b站" data-position="top" data-delay="50"><i class="iconfont icon-bilibili-fill"></i> </a>
         <a href="1250407709@qq.com" class="tooltipped" target="_blank" aria-label="1258407709@qq.com" data-position="top" data-delay="50"><i class="iconfont icon-mail"></i> </a>
-        <a id="wechat" class="tooltipped reward-link modal-trigger btn-medium waves-effect waves-light" data-tooltip="wechat" data-position="top" data-delay="50"><i class="iconfont icon-wechat-fill"></i> </a>
+        <a id="wechat_id" class="tooltipped reward-link modal-trigger btn-medium waves-effect waves-light" data-tooltip="wechat" data-position="top" data-delay="50"><i class="iconfont icon-wechat-fill"></i> </a>
         <a href="javascript:;" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50"><i class="iconfont icon-rss-fill"></i></a>
     </div>
   </header>
