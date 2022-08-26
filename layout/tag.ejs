@@ -5,7 +5,7 @@ page.subtitle = [__('tag.subtitle'), page.tag].join(" - ")
 page.banner_img = theme.tag.banner_img
 page.banner_img_height = theme.tag.banner_img_height
 page.banner_mask_alpha = theme.tag.banner_mask_alpha
-
+<script> document.getElementById('sockial-link').style.display="none"</script>
 var tag = site.tags.find({name: page.tag}).filter(tag => tag.length).data[0]
 %>
 
