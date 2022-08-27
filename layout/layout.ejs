@@ -37,7 +37,6 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
         display: block;
         width: 80%;
         max-width: 150px;
-        z-index: 100000;
     }
     /* 添加动画 */
 
@@ -72,12 +71,12 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
 
   <header>
     <%- inject_point('header') %>
-    <div id="wechat_show" class="box_modal">
+    <div id="wechat_show" class="box_modal" style="z-index: 999">
         <!-- 弹窗内容 -->
         <img class="box_modal_content" id="wechat_img">
     </div>
 
-    <div id="sockial-link"  class="cover-social-link" style="color: var(--subtitle-color);--text-color: var(--navbar-text-color);z-index: 999;
+    <div id="sockial-link"  class="cover-social-link" style="color: var(--subtitle-color);--text-color: var(--navbar-text-color);z-index: 500;
         position: absolute; transform: translateX(-50%); width: 200px; margin-top: -120px;
     align-self: center; display: flex; justify-content: space-evenly; flex-wrap: nowrap; left: 50%;">
         <a href="https://github.com/sisyphus1212/" class="tooltipped" target="_blank" data-tooltip="我的github" data-position="top" data-delay="50"> <i class="iconfont icon-github-fill"></i></a>
