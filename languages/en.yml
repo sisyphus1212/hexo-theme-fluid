@@ -59,8 +59,8 @@ post:
     ND: 'ND - No derivative works'
 
 footer:
-  pv: 'Views: {}'
-  uv: 'Visitors: {}'
+  pv: '被访:次数: {}'
+  uv: '人数: {}'
 
 search:
   title: 'Search'
